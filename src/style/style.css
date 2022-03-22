@@ -1,0 +1,60 @@
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+header,
+footer {
+  flex: 1;
+  background-color: aqua;
+}
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+  background-color: antiquewhite;
+}
+.HolyGrail-content {
+  flex: 1;
+  background-color: azure;
+}
+.HolyGrail-content .InputAddOn {
+  display: flex;
+}
+.HolyGrail-content .InputAddOn-field {
+  flex: 1;
+}
+.HolyGrail-content .Media {
+  display: flex;
+  align-items: flex-start;
+}
+.HolyGrail-content .Media-figure {
+  margin-right: 1em;
+  width: 100px;
+  height: 100px;
+}
+.HolyGrail-content .Media-body {
+  flex: 1;
+}
+.HolyGrail-nav,
+.HolyGrail-ads {
+  /* 两个边栏的宽度设为12em */
+  flex: 0 0 12em;
+  background-color: black;
+}
+.HolyGrail-nav {
+  /* 导航放到最左边 */
+  order: -1;
+  background-color: red;
+}
+@media (max-width: 768px) {
+  .HolyGrail-body {
+    flex-direction: column;
+    flex: 1;
+  }
+  .HolyGrail-nav,
+  .HolyGrail-ads,
+  .HolyGrail-content {
+    flex: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
